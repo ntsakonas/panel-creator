@@ -42,6 +42,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "OnOffSwitch",
+      "x": 3.5,
+      "y": 2.5,
+      "type": "switch",
+      "positions": 2,
+      "holedia": 6,
+      "orientation": "vertical",
+      "text_1": "TUNE",
+      "text_2": "OPER"
+    },
+    {
+      "name": "ToggleSwitch",
+      "x": 4.5,
+      "y": 5.5,
+      "type": "switch",
+      "positions": 3,
+      "holedia": 6,
+      "orientation": "horizontal",
+      "text_1": "40m",
+      "text_2": "30m",
+      "text_3": "20m"
+    },
+    {
+      "x": 4.5,
+      "y": 5.5,
+      "type": "drillhole",
+      "holedia": 6
+    },
+    {
+      "x": 4.5,
+      "y": 5.5,
+      "type": "line",
+      "orientation": "horizontal",
+      "length": 2.8
     }
   ]
 }

@@ -12,7 +12,10 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
         property = "type")
 @JsonSubTypes({
         @JsonSubTypes.Type(value = LabelItem.class, name = "label"),
-        @JsonSubTypes.Type(value = DialItem.class, name = "dial")
+        @JsonSubTypes.Type(value = DialItem.class, name = "dial"),
+        @JsonSubTypes.Type(value = SwitchItem.class, name = "switch"),
+        @JsonSubTypes.Type(value = DrillHoleItem.class, name = "drillhole"),
+        @JsonSubTypes.Type(value = LineItem.class, name = "line"),
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PanelItem {
