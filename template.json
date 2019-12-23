@@ -6,7 +6,7 @@
   "padding": 0.5,
   "items": [
     {
-      "name": "item 1",
+      "name": "VolumeLabel",
       "x": 1.5,
       "y": 0.5,
       "type": "label",
@@ -15,9 +15,9 @@
       "font": 1
     },
     {
-      "name": "item 2",
-      "x": 2.5,
-      "y": 0.5,
+      "name": "VolumeDial",
+      "x": 1.5,
+      "y": 1.5,
       "type": "dial",
       "dia": 35,
       "extend": 180,
@@ -25,8 +25,8 @@
       "baseline": true,
       "holedia": 6,
       "scale": {
-        "start": 0,
-        "end": 10,
+        "min": 0,
+        "max": 10,
         "ticks": [
           {
             "values": true,

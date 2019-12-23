@@ -18,6 +18,9 @@ public class LabelItem extends PanelItem{
                 "labelText='" + labelText + '\'' +
                 ", textSize=" + textSize +
                 ", font=" + font +
+                ", itemName='" + itemName + '\'' +
+                ", xPosition=" + xPosition +
+                ", yPosition=" + yPosition +
                 '}';
     }
 }
