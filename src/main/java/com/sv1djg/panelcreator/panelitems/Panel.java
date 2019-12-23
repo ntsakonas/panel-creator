@@ -18,7 +18,7 @@ public class Panel {
     @JsonProperty("padding")
     public float borderPadding;
     @JsonProperty("items")
-    List<PanelItem> panelItems;
+    public List<PanelItem> panelItems;
 
     @Override
     public String toString() {
