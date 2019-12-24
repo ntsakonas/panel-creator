@@ -56,8 +56,6 @@ class PDFRenderer implements FileRenderer {
             @Override
             public void drawCircle(float centerX, float centerY, float radius, float width) {
                 try {
-                    contentStream.setLineWidth(toPDFUnits(width));
-                    // contentStream.moveTo(toPDFUnits(centerX), toPDFUnits(centerY));
                     // approximate circle using bezier curves
                     // http://spencermortensen.com/articles/bezier-circle/
                     // using the final solution
@@ -67,11 +65,21 @@ class PDFRenderer implements FileRenderer {
                     // P_0 = (-1,0), P_1 = (-1,c), P_2 = (-c,1), P_3 = (0,1)
                     // with c = 0.551915024494
                     final float k = 0.551915024494f;
-                    contentStream.moveTo(centerX, centerY + radius);
-                    contentStream.curveTo(centerX + k * radius, centerY + radius, centerX + radius, centerY + k * radius, centerX + radius, centerY);
-                    contentStream.curveTo(centerX + radius, centerY - k * radius, centerX + k * radius, centerY - radius, centerX, centerY - radius);
-                    contentStream.curveTo(centerX - k * radius, centerY - radius, centerX - radius, centerY - k * radius, centerX - radius, centerY);
-                    contentStream.curveTo(centerX - radius, centerY + k * radius, centerX - k * radius, centerY + radius, centerX, centerY + radius);
+                    final float arcPoint = k * radius;
+                    contentStream.setLineWidth(toPDFUnits(width));
+                    contentStream.moveTo(toPDFUnits(centerX), toPDFUnits(centerY + radius));
+                    contentStream.curveTo(toPDFUnits(centerX + arcPoint), toPDFUnits(centerY + radius),
+                            toPDFUnits(centerX + radius), toPDFUnits(centerY + arcPoint),
+                            toPDFUnits(centerX + radius), toPDFUnits(centerY));
+                    contentStream.curveTo(toPDFUnits(centerX + radius), toPDFUnits(centerY - arcPoint),
+                            toPDFUnits(centerX + arcPoint), toPDFUnits(centerY - radius),
+                            toPDFUnits(centerX), toPDFUnits(centerY - radius));
+                    contentStream.curveTo(toPDFUnits(centerX - arcPoint), toPDFUnits(centerY - radius),
+                            toPDFUnits(centerX - radius), toPDFUnits(centerY - arcPoint),
+                            toPDFUnits(centerX - radius), toPDFUnits(centerY));
+                    contentStream.curveTo(toPDFUnits(centerX - radius), toPDFUnits(centerY + arcPoint),
+                            toPDFUnits(centerX - arcPoint), toPDFUnits(centerY + radius),
+                            toPDFUnits(centerX), toPDFUnits(centerY + radius));
                     contentStream.stroke();
                 } catch (IOException e) {
                     e.printStackTrace();

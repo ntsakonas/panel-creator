@@ -37,15 +37,22 @@
       "x": 50,
       "y": 30,
       "type": "circle",
-      "line": 0.5,
-      "dia": 35
+      "line": 0.2,
+      "dia": 6
     },
     {
-      "x": 20,
+      "x": 100,
       "y": 30,
       "type": "circle",
       "line": 0.2,
       "dia": 6
+    },
+    {
+      "x": 100,
+      "y": 30,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 25
     }
   ]
 }

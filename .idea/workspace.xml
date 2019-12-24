@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905e2a81-0b55-4d8c-940c-c9b733c34323" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DrillHoleRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/CircleItemRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/ItemRendererFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/ItemRendererFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DrillHoleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/CircleItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/template.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template2.json" beforeDir="false" afterPath="$PROJECT_DIR$/template2.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,8 +55,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+                <state relative-caret-position="646">
+                  <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -98,8 +89,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/template2.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="702">
-                  <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="18" />
+                <state relative-caret-position="628">
+                  <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -145,6 +136,7 @@
     <findStrings>
       <find>PageSize.A4</find>
       <find>stroke</find>
+      <find>centerX + arcPoint</find>
     </findStrings>
     <replaceStrings>
       <replace>pageSize</replace>
@@ -190,12 +182,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" />
         <option value="$PROJECT_DIR$/template.json" />
-        <option value="$PROJECT_DIR$/template2.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DrillHoleItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/CircleItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DrillHoleRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/CircleItemRenderer.java" />
+        <option value="$PROJECT_DIR$/template2.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" />
       </list>
     </option>
@@ -356,7 +348,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="2560" height="1413" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13922037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -395,12 +386,6 @@
           <line>26</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -723,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -760,10 +738,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+        <state relative-caret-position="646">
+          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
         </state>
       </provider>
     </entry>
