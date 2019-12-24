@@ -2,7 +2,7 @@
   "width": 250,
   "height": 100,
   "border": true,
-  "padding": 5,
+  "padding": 0,
   "line": 0.2,
   "units": "mm",
   "items": [
@@ -15,7 +15,7 @@
       "size": 12,
       "font": 1,
       "center": true,
-      "bold": false
+      "bold": true
     },
     {
       "name": "BassLabel",
@@ -25,6 +25,7 @@
       "text": "Bass 123",
       "size": 12,
       "font": 2,
+      "bold": true,
       "center": true
     },
     {
@@ -34,7 +35,8 @@
       "type": "label",
       "text": "Treble",
       "size": 12,
-      "font": 2,
+      "font": 3,
+      "bold": true,
       "center": true
     },
     {
@@ -44,7 +46,8 @@
       "type": "label",
       "text": "Tone 789",
       "size": 12,
-      "font": 2,
+      "font": 4,
+      "bold": true,
       "center": true
     },
     {
@@ -53,7 +56,7 @@
       "type": "line",
       "orientation": "horizontal",
       "length": 12,
-      "line": 0.2
+      "line": 0.3
     },
     {
       "x": 150,
@@ -61,7 +64,7 @@
       "type": "line",
       "orientation": "vertical",
       "length": 5,
-      "line": 0.2
+      "line": 0.3
     },
     {
       "x": 100,
@@ -69,7 +72,7 @@
       "type": "line",
       "orientation": "horizontal",
       "length": 12,
-      "line": 0.2
+      "line": 0.3
     },
     {
       "x": 100,
@@ -77,11 +80,25 @@
       "type": "line",
       "orientation": "vertical",
       "length": 5,
-      "line": 0.2
+      "line": 0.3
     },
     {
       "x": 50,
       "y": 30,
+      "type": "circle",
+      "line": 0.4,
+      "dia": 6
+    },
+    {
+      "x": 50,
+      "y": 70,
+      "type": "circle",
+      "line": 0.4,
+      "dia": 6
+    },
+    {
+      "x": 100,
+      "y": 70,
       "type": "circle",
       "line": 0.2,
       "dia": 6
@@ -90,14 +107,14 @@
       "x": 100,
       "y": 30,
       "type": "circle",
-      "line": 0.2,
+      "line": 0.4,
       "dia": 6
     },
     {
       "x": 150,
       "y": 30,
       "type": "circle",
-      "line": 0.2,
+      "line": 0.4,
       "dia": 6
     },
     {
@@ -107,15 +124,17 @@
       "type": "label",
       "text": "RF OUT",
       "size": 10,
-      "font": 2,
+      "font": 5,
+      "bold": true,
       "center": true
     },
     {
       "x": 180,
       "y": 20,
       "type": "circle",
-      "line": 0.2,
-      "dia": 9
+      "line": 0.3,
+      "dia": 9,
+      "drillpoint": true
     },
     {
       "name": "Counter output",
@@ -124,15 +143,17 @@
       "type": "label",
       "text": "COUNTER",
       "size": 10,
-      "font": 2,
+      "font": 6,
+      "bold": true,
       "center": true
     },
     {
       "x": 220,
       "y": 20,
       "type": "circle",
-      "line": 0.2,
-      "dia": 9
+      "line": 0.3,
+      "dia": 9,
+      "drillpoint": true
     }
   ]
 }
