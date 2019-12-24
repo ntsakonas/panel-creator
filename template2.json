@@ -11,19 +11,20 @@
       "x": 50,
       "y": 50,
       "type": "label",
-      "text": "Volume",
+      "text": "Volume 456",
       "size": 12,
       "font": 1,
-      "center": true
+      "center": true,
+      "bold": false
     },
     {
       "name": "BassLabel",
       "x": 100,
       "y": 50,
       "type": "label",
-      "text": "Bass",
+      "text": "Bass 123",
       "size": 12,
-      "font": 1,
+      "font": 2,
       "center": true
     },
     {
@@ -33,7 +34,7 @@
       "type": "label",
       "text": "Treble",
       "size": 12,
-      "font": 1,
+      "font": 2,
       "center": true
     },
     {
@@ -41,17 +42,17 @@
       "x": 125,
       "y": 58,
       "type": "label",
-      "text": "Tone",
+      "text": "Tone 789",
       "size": 12,
-      "font": 1,
+      "font": 2,
       "center": true
     },
     {
-      "x": 135,
+      "x": 138,
       "y": 60,
       "type": "line",
       "orientation": "horizontal",
-      "length": 15,
+      "length": 12,
       "line": 0.2
     },
     {
@@ -67,7 +68,7 @@
       "y": 60,
       "type": "line",
       "orientation": "horizontal",
-      "length": 15,
+      "length": 12,
       "line": 0.2
     },
     {
@@ -106,7 +107,7 @@
       "type": "label",
       "text": "RF OUT",
       "size": 10,
-      "font": 1,
+      "font": 2,
       "center": true
     },
     {
@@ -121,9 +122,9 @@
       "x": 220,
       "y": 35,
       "type": "label",
-      "text": "Counter",
+      "text": "COUNTER",
       "size": 10,
-      "font": 1,
+      "font": 2,
       "center": true
     },
     {

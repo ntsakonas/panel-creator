@@ -19,15 +19,30 @@ class PDFRenderer implements FileRenderer {
     private PDPageContentStream contentStream;
     private UnitType inputUnit;
 
+    // font type 1 = PDType1Font.COURIER / COURIER_BOLD
+    // font type 2 = PDType1Font.COURIER_OBLIQUE / COURIER_BOLD_OBLIQUE
+    // font type 3 = PDType1Font.TIMES_ROMAN / TIMES_BOLD
+    // font type 4 = PDType1Font.TIMES_ITALIC / TIMES_BOLD_ITALIC
+    // font type 5 = PDType1Font.HELVETICA / HELVETICA_BOLD
+    // font type 6 = PDType1Font.HELVETICA_OBLIQUE / HELVETICA_BOLD_OBLIQUE
+    private final PDType1Font[][] FONTS = {
+            {PDType1Font.COURIER, PDType1Font.COURIER_BOLD},
+            {PDType1Font.COURIER_OBLIQUE, PDType1Font.COURIER_BOLD_OBLIQUE},
+            {PDType1Font.TIMES_ROMAN, PDType1Font.TIMES_BOLD},
+            {PDType1Font.TIMES_ITALIC, PDType1Font.TIMES_BOLD_ITALIC},
+            {PDType1Font.HELVETICA, PDType1Font.HELVETICA_BOLD},
+            {PDType1Font.HELVETICA_OBLIQUE, PDType1Font.HELVETICA_BOLD_OBLIQUE},
+    };
+
     @Override
     public OutputRenderer.Operations operations() {
 
         return new OutputRenderer.Operations() {
             @Override
-            public void addText(float x, float y, int fontSize, String text, boolean centerAlign) {
+            public void addText(float x, float y, String text, int fontType, int fontSize, boolean bold, boolean centerAlign) {
                 try {
                     contentStream.beginText();
-                    PDFont font = PDType1Font.COURIER;
+                    PDFont font = getFont(fontType, bold);
                     contentStream.setFont(font, fontSize);
                     if (centerAlign) {
                         float textWidth = font.getStringWidth(text) / 1000.0f * fontSize;
@@ -112,6 +127,12 @@ class PDFRenderer implements FileRenderer {
         if (inputUnit == UnitType.INCHES)
             input = UnitConverter.inchesToMM(input);
         return input * MM_TO_UNITS;
+    }
+
+    private PDFont getFont(int fontType, boolean bold) {
+        if (fontType < 1 || fontType > FONTS.length)
+            throw new IllegalArgumentException("There are only " + FONTS.length + " fonts available. Could not find font [" + fontType + "]");
+        return FONTS[fontType - 1][bold ? 1 : 0];
     }
 
     @Override
