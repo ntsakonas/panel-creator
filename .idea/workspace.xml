@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905e2a81-0b55-4d8c-940c-c9b733c34323" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageOrientation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/UnitConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LabelRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LabelRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/PanelRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/PanelRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/UnitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/UnitType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/FileRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/FileRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DrillHoleRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/CircleItemRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/ItemRendererFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/ItemRendererFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DrillHoleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/CircleItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/template.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template2.json" beforeDir="false" afterPath="$PROJECT_DIR$/template2.json" afterDir="false" />
     </list>
@@ -37,75 +34,16 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67698705">
+    <splitter split-orientation="horizontal" split-proportion="0.72319776">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LabelRenderer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                <state relative-caret-position="414">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/FileRenderer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/FileRendererFactory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#117#118#0" expanded="true" />
-                    <element signature="e#157#158#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelTemplate.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#549#550#0" expanded="true" />
-                    <element signature="e#587#588#0" expanded="true" />
-                    <element signature="e#657#658#0" expanded="true" />
-                    <element signature="e#686#687#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -114,8 +52,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/PanelRenderer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="520">
-                  <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+                <state relative-caret-position="556">
+                  <caret line="40" selection-start-line="40" selection-end-line="40" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -126,8 +64,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+                <state relative-caret-position="160">
+                  <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/CircleItemRenderer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="15" column="99" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -135,8 +85,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.4/e20262d5ae588ad8e7e841073d5d4c05ac66f9e9/pdfbox-2.0.4-sources.jar!/org/apache/pdfbox/pdmodel/PDPageContentStream.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-869">
-                  <caret line="1967" column="16" selection-start-line="1967" selection-start-column="16" selection-end-line="1967" selection-end-column="16" />
+                <state relative-caret-position="589">
+                  <caret line="1424" column="16" selection-start-line="1424" selection-start-column="16" selection-end-line="1424" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -145,11 +95,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/Panel.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/template2.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="648">
-                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+                <state relative-caret-position="702">
+                  <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/CircleItem.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -157,20 +116,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/template2.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/LineItem.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                <state relative-caret-position="288">
+                  <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -214,18 +164,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DialItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/Orientation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/SwitchItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/LineItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/TemplateReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DrillHoleItem.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/RenderOutput.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/ItemRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DialRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DrillHoleRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LineRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/SwitchRenderer.java" />
-        <option value="$PROJECT_DIR$/template.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/TemplateRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/OutputRenderer.java" />
@@ -236,15 +182,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/UnitType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/UnitConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LabelRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/ScaleTicks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/FileRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/Panel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/PanelRenderer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java" />
+        <option value="$PROJECT_DIR$/template.json" />
         <option value="$PROJECT_DIR$/template2.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DrillHoleItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/CircleItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DrillHoleRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/CircleItemRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" />
       </list>
     </option>
   </component>
@@ -404,6 +356,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="2560" height="1413" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13922037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -444,10 +397,10 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java</url>
+          <line>58</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -471,16 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/SwitchItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="7" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -508,26 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/DrillHoleItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,18 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DrillHoleRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LineRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -623,13 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -689,41 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/UnitType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LabelRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,6 +628,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/SwitchItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="7" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/PanelTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PageSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.4/e20262d5ae588ad8e7e841073d5d4c05ac66f9e9/pdfbox-2.0.4-sources.jar!/org/apache/pdfbox/pdmodel/PDPageContentStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="1424" column="16" selection-start-line="1424" selection-start-column="16" selection-end-line="1424" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/LabelRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/LineItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -767,8 +688,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="19" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/CircleItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/PanelItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -777,42 +742,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/PanelRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="556">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/OutputRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/CircleItemRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="234">
+          <caret line="15" column="99" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.4/e20262d5ae588ad8e7e841073d5d4c05ac66f9e9/pdfbox-2.0.4-sources.jar!/org/apache/pdfbox/pdmodel/PDPageContentStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-869">
-          <caret line="1967" column="16" selection-start-line="1967" selection-start-column="16" selection-end-line="1967" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="46" column="53" lean-forward="true" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="160">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
         </state>
       </provider>
     </entry>

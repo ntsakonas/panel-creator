@@ -54,6 +54,32 @@ class PDFRenderer implements FileRenderer {
             }
 
             @Override
+            public void drawCircle(float centerX, float centerY, float radius, float width) {
+                try {
+                    contentStream.setLineWidth(toPDFUnits(width));
+                    // contentStream.moveTo(toPDFUnits(centerX), toPDFUnits(centerY));
+                    // approximate circle using bezier curves
+                    // http://spencermortensen.com/articles/bezier-circle/
+                    // using the final solution
+                    // P_0 = (0,1), P_1 = (c,1), P_2 = (1,c), P_3 = (1,0)
+                    // P_0 = (1,0), P_1 = (1,-c), P_2 = (c,-1), P_3 = (0,-1)
+                    // P_0 = (0,-1), P_1 = (-c,-1), P_3 = (-1,-c), P_4 = (-1,0)
+                    // P_0 = (-1,0), P_1 = (-1,c), P_2 = (-c,1), P_3 = (0,1)
+                    // with c = 0.551915024494
+                    final float k = 0.551915024494f;
+                    contentStream.moveTo(centerX, centerY + radius);
+                    contentStream.curveTo(centerX + k * radius, centerY + radius, centerX + radius, centerY + k * radius, centerX + radius, centerY);
+                    contentStream.curveTo(centerX + radius, centerY - k * radius, centerX + k * radius, centerY - radius, centerX, centerY - radius);
+                    contentStream.curveTo(centerX - k * radius, centerY - radius, centerX - radius, centerY - k * radius, centerX - radius, centerY);
+                    contentStream.curveTo(centerX - radius, centerY + k * radius, centerX - k * radius, centerY + radius, centerX, centerY + radius);
+                    contentStream.stroke();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
             public void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth) {
                 try {
                     // maybe in the future I will support colour
@@ -93,6 +119,7 @@ class PDFRenderer implements FileRenderer {
         //https://stackoverflow.com/a/37554006/2750791
         PDRectangle pageSize = page.getMediaBox();
         float pageWidth = pageSize.getWidth();
+        page.setRotation(90);
         contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth, 0));
     }
 

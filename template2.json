@@ -1,5 +1,5 @@
 {
-  "width": 210,
+  "width": 250,
   "height": 100,
   "border": true,
   "padding": 5,
@@ -32,6 +32,20 @@
       "text": "Treble",
       "size": 12,
       "font": 1
+    },
+    {
+      "x": 50,
+      "y": 30,
+      "type": "circle",
+      "line": 0.5,
+      "dia": 35
+    },
+    {
+      "x": 20,
+      "y": 30,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6
     }
   ]
 }

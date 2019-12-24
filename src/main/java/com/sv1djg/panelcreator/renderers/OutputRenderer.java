@@ -11,6 +11,8 @@ public class OutputRenderer {
 
         void drawLine(float startX, float startY, float endX, float endY, float width);
 
+        void drawCircle(float centerX, float centerY, float radius, float width);
+
         void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth);
 
     }

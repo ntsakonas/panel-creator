@@ -18,8 +18,8 @@ public class ItemRendererFactory {
         if (item.getClass() == SwitchItem.class)
             return new SwitchRenderer(SwitchItem.class.cast(item));
 
-        if (item.getClass() == DrillHoleItem.class)
-            return new DrillHoleRenderer(DrillHoleItem.class.cast(item));
+        if (item.getClass() == CircleItem.class)
+            return new CircleItemRenderer(CircleItem.class.cast(item));
 
         if (item.getClass() == LineItem.class)
             return new LineRenderer(LineItem.class.cast(item));

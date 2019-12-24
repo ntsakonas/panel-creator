@@ -4,14 +4,17 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DrillHoleItem extends PanelItem {
-    @JsonProperty("holedia")
-    public float holeDiameter;
+public class CircleItem extends PanelItem {
+    @JsonProperty("dia")
+    public float diameter;
+    @JsonProperty("line")
+    public float lineWidth;
 
     @Override
     public String toString() {
-        return "DrillHoleItem{" +
-                "holeDiameter=" + holeDiameter +
+        return "CircleItem{" +
+                "diameter=" + diameter +
+                ", lineWidth=" + lineWidth +
                 ", itemName='" + itemName + '\'' +
                 ", xPosition=" + xPosition +
                 ", yPosition=" + yPosition +

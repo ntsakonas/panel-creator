@@ -69,7 +69,7 @@
     {
       "x": 4.5,
       "y": 5.5,
-      "type": "drillhole",
+      "type": "circle",
       "holedia": 6
     },
     {
