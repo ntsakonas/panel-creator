@@ -12,7 +12,7 @@ public class CircleItemRenderer implements ItemRenderer {
 
     @Override
     public void renderInto(OutputRenderer.Operations operations) {
-        System.out.println("Rendering Circle");
+        System.out.println("Rendering Circle " + (circle.itemName != null ? circle.itemName : ""));
         operations.drawCircle(circle.xPosition, circle.yPosition, circle.diameter, circle.lineWidth);
         if (circle.showDrillPoint) {
             // draw vertical line in the circle

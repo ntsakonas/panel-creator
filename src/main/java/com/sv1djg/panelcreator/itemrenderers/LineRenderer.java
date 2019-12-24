@@ -13,7 +13,7 @@ public class LineRenderer implements ItemRenderer {
 
     @Override
     public void renderInto(OutputRenderer.Operations operations) {
-        System.out.println("Rendering Line");
+        System.out.println("Rendering Line "+ (line.itemName != null ? line.itemName : ""));
         float startX = line.xPosition;
         float startY = line.yPosition;
         float endX = line.lineOrientation == Orientation.HORIZONTAL ? startX + line.lineLength : startX;

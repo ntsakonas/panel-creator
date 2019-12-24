@@ -12,7 +12,7 @@ public class LabelRenderer implements ItemRenderer {
 
     @Override
     public void renderInto(OutputRenderer.Operations operations) {
-        System.out.println("Rendering Label");
+        System.out.println("Rendering Label "+(label.itemName != null ? label.itemName : ""));
         operations.addText(label.xPosition, label.yPosition, label.labelText, label.font, label.textSize, label.boldText, label.centerAlign);
     }
 }
