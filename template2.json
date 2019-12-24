@@ -1,14 +1,15 @@
 {
-  "width": 20,
-  "height": 10,
-  "units": "cm",
+  "width": 210,
+  "height": 100,
   "border": true,
-  "padding": 0.5,
+  "padding": 5,
+  "line": 0.2,
+  "units": "mm",
   "items": [
     {
       "name": "VolumeLabel",
-      "x": 5,
-      "y": 5,
+      "x": 50,
+      "y": 50,
       "type": "label",
       "text": "Volume",
       "size": 12,
@@ -16,8 +17,8 @@
     },
     {
       "name": "BassLabel",
-      "x": 10,
-      "y": 5,
+      "x": 100,
+      "y": 50,
       "type": "label",
       "text": "Bass",
       "size": 12,
@@ -25,8 +26,8 @@
     },
     {
       "name": "TrebleLabel",
-      "x": 15,
-      "y": 5,
+      "x": 150,
+      "y": 50,
       "type": "label",
       "text": "Treble",
       "size": 12,

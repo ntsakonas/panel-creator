@@ -37,13 +37,11 @@ class PanelRenderer implements ItemRenderer {
                 topRightY -= panel.borderPadding;
             }
 
-            float lineWidth = 0.2f;
-            operations.drawLine(bottomLeftX * 10.0f, bottomLeftY * 10.0f, bottomLeftX * 10.0f, topRightY * 10.0f, lineWidth);
-            operations.drawLine(bottomLeftX * 10.0f, topRightY * 10.0f, topRightX * 10.0f, topRightY * 10.0f, lineWidth);
-            operations.drawLine(topRightX * 10.0f, topRightY * 10.0f, topRightX * 10.0f, bottomLeftY * 10.0f, lineWidth);
-            operations.drawLine(topRightX * 10.0f, bottomLeftY * 10.0f, bottomLeftX * 10.0f, bottomLeftY * 10.0f, lineWidth);
-
-            // operations.drawRectangle(bottomLeftX *10.f, bottomLeftY*10.f, (topRightX - bottomLeftX)*10.f, (topRightY - bottomLeftY)*10.f, 1.0f);
+            float lineWidth = panel.borderLineWidth;
+            operations.drawLine(bottomLeftX, bottomLeftY, bottomLeftX, topRightY, lineWidth);
+            operations.drawLine(bottomLeftX, topRightY, topRightX, topRightY, lineWidth);
+            operations.drawLine(topRightX, topRightY, topRightX, bottomLeftY, lineWidth);
+            operations.drawLine(topRightX, bottomLeftY, bottomLeftX, bottomLeftY, lineWidth);
         }
     }
 

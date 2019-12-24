@@ -1,11 +1,13 @@
 package com.sv1djg.panelcreator.renderers;
 
+import com.sv1djg.panelcreator.panelitems.UnitType;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
+import org.apache.pdfbox.util.Matrix;
 
 import java.io.IOException;
 
@@ -15,6 +17,7 @@ class PDFRenderer implements FileRenderer {
 
     private PDDocument document;
     private PDPageContentStream contentStream;
+    private UnitType inputUnit;
 
     @Override
     public OutputRenderer.Operations operations() {
@@ -26,7 +29,7 @@ class PDFRenderer implements FileRenderer {
                     contentStream.beginText();
                     PDFont font = PDType1Font.COURIER;
                     contentStream.setFont(font, fontSize);
-                    contentStream.newLineAtOffset(x * MM_TO_UNITS, y * MM_TO_UNITS);
+                    contentStream.newLineAtOffset(toPDFUnits(x), toPDFUnits(y));
                     contentStream.showText(text);
                     contentStream.endText();
                 } catch (IOException e) {
@@ -37,11 +40,13 @@ class PDFRenderer implements FileRenderer {
             @Override
             public void drawLine(float startX, float startY, float endX, float endY, float width) {
                 try {
-                    contentStream.setLineWidth(width * MM_TO_UNITS);
+                    contentStream.setLineWidth(toPDFUnits(width));
                     // maybe in the future I will support colour
                     // contentStream.setNonStrokingColor(Color.GRAY)
-                    contentStream.moveTo(startX * MM_TO_UNITS, startY * MM_TO_UNITS);
-                    contentStream.lineTo(endX * MM_TO_UNITS, endY * MM_TO_UNITS);
+                    // contentStream.setLineJoinStyle(0);
+                    contentStream.setLineCapStyle(2);
+                    contentStream.moveTo(toPDFUnits(startX), toPDFUnits(startY));
+                    contentStream.lineTo(toPDFUnits(endX), toPDFUnits(endY));
                     contentStream.stroke();
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -53,7 +58,7 @@ class PDFRenderer implements FileRenderer {
                 try {
                     // maybe in the future I will support colour
                     //contentStream.setNonStrokingColor(Color.RED);
-                    contentStream.addRect(bottomLeftX * MM_TO_UNITS, bottomLeftY * MM_TO_UNITS, width * MM_TO_UNITS, height * MM_TO_UNITS);
+                    contentStream.addRect(toPDFUnits(bottomLeftX), toPDFUnits(bottomLeftY), toPDFUnits(width), toPDFUnits(height));
                     contentStream.fill();
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -63,17 +68,40 @@ class PDFRenderer implements FileRenderer {
         };
     }
 
+    private float toPDFUnits(float input) {
+        if (inputUnit == UnitType.INCHES)
+            input = UnitConverter.inchesToMM(input);
+        return input * MM_TO_UNITS;
+    }
+
     @Override
-    public void prepare() throws IOException {
+    public void prepare(PageSize pageSize, PageOrientation pageOrientation, UnitType inputUnit) throws IOException {
         // Create a document and add a page to it
+        this.inputUnit = inputUnit;
         document = new PDDocument();
-        PDPage page = new PDPage(PDRectangle.A4);
-        // use the page in landscape
-        //https://stackoverflow.com/a/37554006/2750791
+        PDPage page = new PDPage(getPdfPageSize(pageSize));
         document.addPage(page);
         // Start a new content stream which will "hold" the to be created content
         contentStream = new PDPageContentStream(document, page);
+        if (pageOrientation == PageOrientation.LANDSCAPE)
+            setPageToLandscape(page);
         // printPageInfo(page);
+    }
+
+    private void setPageToLandscape(PDPage page) throws IOException {
+        // use the page in landscape
+        //https://stackoverflow.com/a/37554006/2750791
+        PDRectangle pageSize = page.getMediaBox();
+        float pageWidth = pageSize.getWidth();
+        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth, 0));
+    }
+
+    private PDRectangle getPdfPageSize(PageSize pageSize) {
+        switch (pageSize) {
+            case A4:
+            default:
+                return PDRectangle.A4;
+        }
     }
 
     private void printPageInfo(PDPage page) {

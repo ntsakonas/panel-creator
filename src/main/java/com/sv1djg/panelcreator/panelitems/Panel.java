@@ -17,6 +17,8 @@ public class Panel {
     public boolean hasBorder;
     @JsonProperty("padding")
     public float borderPadding;
+    @JsonProperty("line")
+    public float borderLineWidth;
     @JsonProperty("items")
     public List<PanelItem> panelItems;
 
