@@ -1,0 +1,36 @@
+{
+  "width": 23,
+  "height": 1.2,
+  "units": "cm",
+  "border": true,
+  "padding": 0.5,
+  "items": [
+    {
+      "name": "VolumeLabel",
+      "x": 5,
+      "y": 5,
+      "type": "label",
+      "text": "Volume",
+      "size": 12,
+      "font": 1
+    },
+    {
+      "name": "BassLabel",
+      "x": 10,
+      "y": 5,
+      "type": "label",
+      "text": "Bass",
+      "size": 12,
+      "font": 1
+    },
+    {
+      "name": "TrebleLabel",
+      "x": 15,
+      "y": 5,
+      "type": "label",
+      "text": "Treble",
+      "size": 12,
+      "font": 1
+    }
+  ]
+}

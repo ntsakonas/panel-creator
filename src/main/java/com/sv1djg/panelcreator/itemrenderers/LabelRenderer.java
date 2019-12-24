@@ -13,6 +13,8 @@ public class LabelRenderer implements ItemRenderer {
     @Override
     public void renderInto(OutputRenderer.Operations operations) {
         System.out.println("Rendering Label");
-        operations.addText(label.xPosition,label.yPosition,label.textSize,label.labelText);
+        // X,Y must be provided as mm in the operation
+        // the template has the values in cm
+        operations.addText(label.xPosition * 10.0f, label.yPosition * 10.0f, label.textSize, label.labelText);
     }
 }
