@@ -8,7 +8,10 @@ public class OutputRenderer {
     public interface Operations {
         void addText(float x, float y, int fontSize, String text);
 
-        void drawLine(float startX, float startY, float endX, float endY);
+        void drawLine(float startX, float startY, float endX, float endY, float width);
+
+        void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth);
+
     }
 
     public void processTemplate(PanelTemplate template) throws IOException {

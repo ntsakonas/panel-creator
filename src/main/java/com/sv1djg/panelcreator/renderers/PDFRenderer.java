@@ -35,7 +35,29 @@ class PDFRenderer implements FileRenderer {
             }
 
             @Override
-            public void drawLine(float startX, float startY, float endX, float endY) {
+            public void drawLine(float startX, float startY, float endX, float endY, float width) {
+                try {
+                    contentStream.setLineWidth(width * MM_TO_UNITS);
+                    // maybe in the future I will support colour
+                    // contentStream.setNonStrokingColor(Color.GRAY)
+                    contentStream.moveTo(startX * MM_TO_UNITS, startY * MM_TO_UNITS);
+                    contentStream.lineTo(endX * MM_TO_UNITS, endY * MM_TO_UNITS);
+                    contentStream.stroke();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth) {
+                try {
+                    // maybe in the future I will support colour
+                    //contentStream.setNonStrokingColor(Color.RED);
+                    contentStream.addRect(bottomLeftX * MM_TO_UNITS, bottomLeftY * MM_TO_UNITS, width * MM_TO_UNITS, height * MM_TO_UNITS);
+                    contentStream.fill();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
             }
         };
