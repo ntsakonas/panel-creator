@@ -1,6 +1,6 @@
 package com.sv1djg.panelcreator.itemrenderers;
 
-import com.sv1djg.panelcreator.RenderOutput;
+import com.sv1djg.panelcreator.OutputRenderer;
 import com.sv1djg.panelcreator.panelitems.SwitchItem;
 
 public class SwitchRenderer implements ItemRenderer {
@@ -11,7 +11,7 @@ public class SwitchRenderer implements ItemRenderer {
     }
 
     @Override
-    public void renderInto(RenderOutput pdf) {
+    public void renderInto(OutputRenderer.Operations operations) {
         System.out.println("Rendering Switch");
     }
 }

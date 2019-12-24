@@ -1,6 +1,6 @@
 package com.sv1djg.panelcreator.itemrenderers;
 
-import com.sv1djg.panelcreator.RenderOutput;
+import com.sv1djg.panelcreator.OutputRenderer;
 import com.sv1djg.panelcreator.panelitems.Panel;
 import com.sv1djg.panelcreator.panelitems.PanelItem;
 
@@ -13,7 +13,7 @@ class PanelRenderer implements ItemRenderer {
     }
 
     @Override
-    public void renderInto(RenderOutput pdf) {
+    public void renderInto(OutputRenderer.Operations operations) {
         // draw the top level panel into the pdf
         if (panel.hasBorder) {
 
@@ -21,7 +21,7 @@ class PanelRenderer implements ItemRenderer {
         // delegate rendering to the items
         for (PanelItem item : panel.panelItems) {
             ItemRenderer itemRenderer = RendererFactory.getRendererFor(item);
-            itemRenderer.renderInto(pdf);
+            itemRenderer.renderInto(operations);
         }
     }
 

@@ -7,11 +7,11 @@
   "items": [
     {
       "name": "VolumeLabel",
-      "x": 1.5,
-      "y": 0.5,
+      "x": 10,
+      "y": 20,
       "type": "label",
-      "text": "volume",
-      "size": 10,
+      "text": "Volume",
+      "size": 12,
       "font": 1
     },
     {

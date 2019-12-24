@@ -11,8 +11,8 @@ public class PanelTemplate {
         this.panel = panel;
     }
 
-    public void render(RenderOutput renderOutput) {
+    public void render(OutputRenderer.Operations outputRenderer) {
         ItemRenderer renderer = RendererFactory.getRendererFor(panel);
-        renderer.renderInto(renderOutput);
+        renderer.renderInto(outputRenderer);
     }
 }

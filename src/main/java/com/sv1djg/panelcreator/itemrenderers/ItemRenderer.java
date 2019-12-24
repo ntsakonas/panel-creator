@@ -1,7 +1,7 @@
 package com.sv1djg.panelcreator.itemrenderers;
 
-import com.sv1djg.panelcreator.RenderOutput;
+import com.sv1djg.panelcreator.OutputRenderer;
 
 public interface ItemRenderer {
-    void renderInto(RenderOutput pdf);
+    void renderInto(OutputRenderer.Operations operations);
 }
