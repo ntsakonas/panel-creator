@@ -15,9 +15,6 @@ public class ItemRendererFactory {
         if (item.getClass() == DialItem.class)
             return new DialRenderer(DialItem.class.cast(item));
 
-        if (item.getClass() == SwitchItem.class)
-            return new SwitchRenderer(SwitchItem.class.cast(item));
-
         if (item.getClass() == CircleItem.class)
             return new CircleItemRenderer(CircleItem.class.cast(item));
 
