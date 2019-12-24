@@ -24,12 +24,18 @@ class PDFRenderer implements FileRenderer {
 
         return new OutputRenderer.Operations() {
             @Override
-            public void addText(float x, float y, int fontSize, String text) {
+            public void addText(float x, float y, int fontSize, String text, boolean centerAlign) {
                 try {
                     contentStream.beginText();
                     PDFont font = PDType1Font.COURIER;
                     contentStream.setFont(font, fontSize);
-                    contentStream.newLineAtOffset(toPDFUnits(x), toPDFUnits(y));
+                    if (centerAlign) {
+                        float textWidth = font.getStringWidth(text) / 1000.0f * fontSize;
+                        float startX = toPDFUnits(x) - textWidth / 2.0f;
+                        contentStream.newLineAtOffset(startX, toPDFUnits(y));
+                    } else {
+                        contentStream.newLineAtOffset(toPDFUnits(x), toPDFUnits(y));
+                    }
                     contentStream.showText(text);
                     contentStream.endText();
                 } catch (IOException e) {

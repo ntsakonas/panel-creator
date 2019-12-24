@@ -13,5 +13,6 @@ public class LineRenderer implements ItemRenderer {
     @Override
     public void renderInto(OutputRenderer.Operations operations) {
         System.out.println("Rendering Line");
+        // operations.drawLine();
     }
 }

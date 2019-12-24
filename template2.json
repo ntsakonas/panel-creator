@@ -7,13 +7,14 @@
   "units": "mm",
   "items": [
     {
-      "name": "VolumeLabel",
+      "name": "VolumeLabel1",
       "x": 50,
       "y": 50,
       "type": "label",
       "text": "Volume",
       "size": 12,
-      "font": 1
+      "font": 1,
+      "center": true
     },
     {
       "name": "BassLabel",
@@ -22,7 +23,8 @@
       "type": "label",
       "text": "Bass",
       "size": 12,
-      "font": 1
+      "font": 1,
+      "center": true
     },
     {
       "name": "TrebleLabel",
@@ -31,7 +33,18 @@
       "type": "label",
       "text": "Treble",
       "size": 12,
-      "font": 1
+      "font": 1,
+      "center": true
+    },
+    {
+      "name": "ToneLabel",
+      "x": 125,
+      "y": 58,
+      "type": "label",
+      "text": "Tone",
+      "size": 12,
+      "font": 1,
+      "center": true
     },
     {
       "x": 50,
@@ -48,11 +61,38 @@
       "dia": 6
     },
     {
-      "x": 100,
-      "y": 30,
+      "name": "RF output",
+      "x": 180,
+      "y": 35,
+      "type": "label",
+      "text": "RF OUT",
+      "size": 10,
+      "font": 1,
+      "center": true
+    },
+    {
+      "x": 180,
+      "y": 20,
       "type": "circle",
       "line": 0.2,
-      "dia": 25
+      "dia": 9
+    },
+    {
+      "name": "Counter output",
+      "x": 220,
+      "y": 35,
+      "type": "label",
+      "text": "Counter",
+      "size": 10,
+      "font": 1,
+      "center": true
+    },
+    {
+      "x": 220,
+      "y": 20,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 9
     }
   ]
 }

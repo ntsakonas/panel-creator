@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class OutputRenderer {
     public interface Operations {
-        void addText(float x, float y, int fontSize, String text);
+        void addText(float x, float y, int fontSize, String text, boolean centerAlign);
 
         void drawLine(float startX, float startY, float endX, float endY, float width);
 
