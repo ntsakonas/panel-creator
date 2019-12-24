@@ -9,12 +9,15 @@ public class LineItem extends PanelItem {
     public Orientation lineOrientation;
     @JsonProperty("length")
     public float lineLength;
+    @JsonProperty("line")
+    public float lineWidth;
 
     @Override
     public String toString() {
         return "LineItem{" +
                 "lineOrientation=" + lineOrientation +
                 ", lineLength=" + lineLength +
+                ", lineWidth=" + lineWidth +
                 ", itemName='" + itemName + '\'' +
                 ", xPosition=" + xPosition +
                 ", yPosition=" + yPosition +

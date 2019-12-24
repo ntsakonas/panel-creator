@@ -47,6 +47,38 @@
       "center": true
     },
     {
+      "x": 135,
+      "y": 60,
+      "type": "line",
+      "orientation": "horizontal",
+      "length": 15,
+      "line": 0.2
+    },
+    {
+      "x": 150,
+      "y": 55,
+      "type": "line",
+      "orientation": "vertical",
+      "length": 5,
+      "line": 0.2
+    },
+    {
+      "x": 100,
+      "y": 60,
+      "type": "line",
+      "orientation": "horizontal",
+      "length": 15,
+      "line": 0.2
+    },
+    {
+      "x": 100,
+      "y": 55,
+      "type": "line",
+      "orientation": "vertical",
+      "length": 5,
+      "line": 0.2
+    },
+    {
       "x": 50,
       "y": 30,
       "type": "circle",
@@ -55,6 +87,13 @@
     },
     {
       "x": 100,
+      "y": 30,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6
+    },
+    {
+      "x": 150,
       "y": 30,
       "type": "circle",
       "line": 0.2,
