@@ -6,6 +6,15 @@
   "padding": 0.5,
   "items": [
     {
+      "name": "Signature",
+      "x": 0,
+      "y": 0,
+      "type": "label",
+      "text": "NickTsakonas",
+      "size": 12,
+      "font": 1
+    },
+    {
       "name": "VolumeLabel",
       "x": 5,
       "y": 5,

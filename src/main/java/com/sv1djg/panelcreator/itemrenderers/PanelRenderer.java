@@ -1,6 +1,6 @@
 package com.sv1djg.panelcreator.itemrenderers;
 
-import com.sv1djg.panelcreator.OutputRenderer;
+import com.sv1djg.panelcreator.renderers.OutputRenderer;
 import com.sv1djg.panelcreator.panelitems.Panel;
 import com.sv1djg.panelcreator.panelitems.PanelItem;
 
@@ -20,7 +20,7 @@ class PanelRenderer implements ItemRenderer {
         }
         // delegate rendering to the items
         for (PanelItem item : panel.panelItems) {
-            ItemRenderer itemRenderer = RendererFactory.getRendererFor(item);
+            ItemRenderer itemRenderer = ItemRendererFactory.getRendererFor(item);
             itemRenderer.renderInto(operations);
         }
     }

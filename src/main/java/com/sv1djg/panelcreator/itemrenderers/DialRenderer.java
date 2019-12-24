@@ -1,6 +1,6 @@
 package com.sv1djg.panelcreator.itemrenderers;
 
-import com.sv1djg.panelcreator.OutputRenderer;
+import com.sv1djg.panelcreator.renderers.OutputRenderer;
 import com.sv1djg.panelcreator.panelitems.DialItem;
 
 public class DialRenderer implements ItemRenderer {

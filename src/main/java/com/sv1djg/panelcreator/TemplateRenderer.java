@@ -1,5 +1,7 @@
 package com.sv1djg.panelcreator;
 
+import com.sv1djg.panelcreator.renderers.OutputRenderer;
+
 import java.io.IOException;
 
 public class TemplateRenderer {

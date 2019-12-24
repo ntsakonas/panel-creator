@@ -2,7 +2,7 @@ package com.sv1djg.panelcreator.itemrenderers;
 
 import com.sv1djg.panelcreator.panelitems.*;
 
-public class RendererFactory {
+public class ItemRendererFactory {
     public static ItemRenderer getRendererFor(Panel panel) {
         return new PanelRenderer(panel);
     }
