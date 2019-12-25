@@ -3,6 +3,8 @@ package com.sv1djg.panelcreator.panelitems;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ScaleTicks {
     @JsonProperty("values")
@@ -13,8 +15,20 @@ public class ScaleTicks {
     public float tickWidth;
     @JsonProperty("step")
     public float tickStep;
-    @JsonProperty("resolution")
-    public float tickValueResolution;
+    @JsonProperty("decimals")
+    public int tickValueDecimals;
+    @JsonProperty("angles")
+    public List<Float> customValuesAnchorAngles;
+    @JsonProperty("text")
+    public List<String> customValuesTexts;
+    @JsonProperty("size")
+    public int textSize;
+    @JsonProperty("font")
+    public int font;
+    @JsonProperty("bold")
+    public boolean boldText;
+    @JsonProperty("labeldia")
+    public float labelRingDiameter;
 
     @Override
     public String toString() {
@@ -23,7 +37,13 @@ public class ScaleTicks {
                 ", tickLength=" + tickLength +
                 ", tickWidth=" + tickWidth +
                 ", tickStep=" + tickStep +
-                ", tickValueResolution=" + tickValueResolution +
+                ", tickValueDecimals=" + tickValueDecimals +
+                ", customValuesAnchorAngles=" + customValuesAnchorAngles +
+                ", customValuesTexts=" + customValuesTexts +
+                ", textSize=" + textSize +
+                ", font=" + font +
+                ", boldText=" + boldText +
+                ", labelRingDiameter=" + labelRingDiameter +
                 '}';
     }
 }
