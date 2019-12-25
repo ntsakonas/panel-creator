@@ -153,16 +153,24 @@ class PDFRenderer implements FileRenderer {
         contentStream = new PDPageContentStream(document, page);
         if (pageOrientation == PageOrientation.LANDSCAPE)
             setPageToLandscape(page);
-        // printPageInfo(page);
+        addSafetyMargins(page);
+    }
+
+    private void addSafetyMargins(PDPage page) throws IOException {
+        PDRectangle pageSize = page.getMediaBox();
+        float pageWidth = pageSize.getWidth();
+        contentStream.transform(Matrix.getTranslateInstance(SAFETY_MARGIN, SAFETY_MARGIN));
     }
 
     private void setPageToLandscape(PDPage page) throws IOException {
+        // TODO:: I need to set the SAFETY margins somewhere else, so that they apply
+        // both on portrait and landscape
         // use the page in landscape
         //https://stackoverflow.com/a/37554006/2750791
         PDRectangle pageSize = page.getMediaBox();
         float pageWidth = pageSize.getWidth();
         page.setRotation(90);
-        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth - SAFETY_MARGIN, SAFETY_MARGIN));
+        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth,0));
     }
 
     private PDRectangle getPdfPageSize(PageSize pageSize) {

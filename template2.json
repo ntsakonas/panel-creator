@@ -7,19 +7,19 @@
   "units": "mm",
   "items": [
     {
-      "name": "VolumeLabel1",
-      "x": 50,
-      "y": 50,
+      "name": "Tuning Label",
+      "x": 40,
+      "y": 10,
       "type": "label",
-      "text": "Volume 456",
+      "text": "Tune",
       "size": 12,
       "font": 1,
       "center": true,
       "bold": true
     },
     {
-      "name": "VolumeDial",
-      "x": 50,
+      "name": "Tuning dial",
+      "x": 40,
       "y": 30,
       "type": "dial",
       "dia": 35,
@@ -70,7 +70,7 @@
       }
     },
     {
-      "name": "BassDial",
+      "name": "Regen dial",
       "x": 100,
       "y": 30,
       "type": "dial",
@@ -103,91 +103,66 @@
       }
     },
     {
-      "name": "BassLabel",
+      "name": "Regen label",
       "x": 100,
-      "y": 50,
+      "y": 10,
       "type": "label",
-      "text": "Bass 123",
+      "text": "Regen",
       "size": 12,
       "font": 2,
       "bold": true,
       "center": true
     },
     {
-      "name": "TrebleLabel",
-      "x": 150,
-      "y": 50,
+      "name": "Controls label",
+      "x": 70,
+      "y": 63,
       "type": "label",
-      "text": "Treble",
+      "text": "Controls",
       "size": 12,
-      "font": 3,
-      "bold": true,
+      "font": 1,
+      "bold": false,
       "center": true
     },
     {
-      "name": "ToneLabel",
-      "x": 125,
-      "y": 58,
-      "type": "label",
-      "text": "Tone 789",
-      "size": 12,
-      "font": 4,
-      "bold": true,
-      "center": true
-    },
-    {
-      "x": 138,
-      "y": 60,
+      "x": 85,
+      "y": 65,
       "type": "line",
       "orientation": "horizontal",
-      "length": 12,
-      "line": 0.3
-    },
-    {
-      "x": 150,
-      "y": 55,
-      "type": "line",
-      "orientation": "vertical",
-      "length": 5,
+      "length": 15,
       "line": 0.3
     },
     {
       "x": 100,
       "y": 60,
       "type": "line",
-      "orientation": "horizontal",
-      "length": 12,
+      "orientation": "vertical",
+      "length": 5,
       "line": 0.3
     },
     {
-      "x": 100,
-      "y": 55,
+      "x": 40,
+      "y": 65,
+      "type": "line",
+      "orientation": "horizontal",
+      "length": 15,
+      "line": 0.3
+    },
+    {
+      "x": 40,
+      "y": 60,
       "type": "line",
       "orientation": "vertical",
       "length": 5,
       "line": 0.3
     },
     {
-      "x": 50,
+      "x": 40,
       "y": 30,
       "type": "circle",
       "line": 0.4,
       "dia": 6,
       "drillpoint": true
-    },
-    {
-      "x": 50,
-      "y": 70,
-      "type": "circle",
-      "line": 0.4,
-      "dia": 6
-    },
-    {
-      "x": 100,
-      "y": 70,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 6
     },
     {
       "x": 100,
@@ -198,26 +173,19 @@
       "drillpoint": true
     },
     {
-      "x": 150,
-      "y": 30,
-      "type": "circle",
-      "line": 0.4,
-      "dia": 6
-    },
-    {
-      "name": "RF output",
-      "x": 180,
-      "y": 35,
+      "name": "Aerial connector",
+      "x": 40,
+      "y": 90,
       "type": "label",
-      "text": "RF OUT",
-      "size": 10,
-      "font": 5,
+      "text": "Aerial",
+      "size": 11,
+      "font": 2,
       "bold": true,
       "center": true
     },
     {
-      "x": 180,
-      "y": 20,
+      "x": 40,
+      "y": 80,
       "type": "circle",
       "line": 0.3,
       "dia": 9,
@@ -225,18 +193,18 @@
     },
     {
       "name": "Counter output",
-      "x": 220,
-      "y": 35,
+      "x": 100,
+      "y": 90,
       "type": "label",
-      "text": "COUNTER",
-      "size": 10,
-      "font": 6,
+      "text": "Phones",
+      "size": 11,
+      "font": 2,
       "bold": true,
       "center": true
     },
     {
-      "x": 220,
-      "y": 20,
+      "x": 100,
+      "y": 80,
       "type": "circle",
       "line": 0.3,
       "dia": 9,
