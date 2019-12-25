@@ -163,8 +163,6 @@ class PDFRenderer implements FileRenderer {
     }
 
     private void setPageToLandscape(PDPage page) throws IOException {
-        // TODO:: I need to set the SAFETY margins somewhere else, so that they apply
-        // both on portrait and landscape
         // use the page in landscape
         //https://stackoverflow.com/a/37554006/2750791
         PDRectangle pageSize = page.getMediaBox();

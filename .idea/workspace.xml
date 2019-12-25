@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="905e2a81-0b55-4d8c-940c-c9b733c34323" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mic_proc_template.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/template.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template2.json" beforeDir="false" afterPath="$PROJECT_DIR$/template2.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -100,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+            <state relative-caret-position="666">
+              <caret line="171" column="73" lean-forward="true" selection-start-line="171" selection-start-column="73" selection-end-line="171" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,28 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.4/e20262d5ae588ad8e7e841073d5d4c05ac66f9e9/pdfbox-2.0.4-sources.jar!/org/apache/pdfbox/pdmodel/PDPageContentStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="873" column="16" selection-start-line="873" selection-start-column="16" selection-end-line="873" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.4/e20262d5ae588ad8e7e841073d5d4c05ac66f9e9/pdfbox-2.0.4-sources.jar!/org/apache/pdfbox/util/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="250" column="55" lean-forward="true" selection-start-line="250" selection-start-column="8" selection-end-line="250" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3510">
-              <caret line="195" column="13" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
+            <state relative-caret-position="319">
+              <caret line="505" column="25" selection-start-line="505" selection-start-column="25" selection-end-line="505" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -217,8 +196,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/panelitems/ScaleTicks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/itemrenderers/DialRenderer.java" />
         <option value="$PROJECT_DIR$/mic_proc_template.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" />
         <option value="$PROJECT_DIR$/template2.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java" />
       </list>
     </option>
   </component>
@@ -409,7 +388,7 @@
       <window_info anchor="bottom" id="Build" order="10" weight="0.3299373" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.124797404" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.07941653" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Gradle" order="5" />
@@ -826,27 +805,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="195" column="13" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.4/e20262d5ae588ad8e7e841073d5d4c05ac66f9e9/pdfbox-2.0.4-sources.jar!/org/apache/pdfbox/util/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="250" column="55" lean-forward="true" selection-start-line="250" selection-start-column="8" selection-end-line="250" selection-end-column="55" />
+        <state relative-caret-position="319">
+          <caret line="505" column="25" selection-start-line="505" selection-start-column="25" selection-end-line="505" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sv1djg/panelcreator/renderers/PDFRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        <state relative-caret-position="666">
+          <caret line="171" column="73" lean-forward="true" selection-start-line="171" selection-start-column="73" selection-end-line="171" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3510">
-          <caret line="195" column="13" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -9,15 +9,15 @@ public class CircleItem extends PanelItem {
     public float diameter;
     @JsonProperty("line")
     public float lineWidth;
-    @JsonProperty("drillpoint")
-    public boolean showDrillPoint;
+    @JsonProperty("drillmark")
+    public boolean showDrillMark;
 
     @Override
     public String toString() {
         return "CircleItem{" +
                 "diameter=" + diameter +
                 ", lineWidth=" + lineWidth +
-                ", showDrillPoint=" + showDrillPoint +
+                ", showDrillMark=" + showDrillMark +
                 ", itemName='" + itemName + '\'' +
                 ", xPosition=" + xPosition +
                 ", yPosition=" + yPosition +

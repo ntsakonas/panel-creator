@@ -162,7 +162,7 @@
       "type": "circle",
       "line": 0.4,
       "dia": 6,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "x": 100,
@@ -170,7 +170,7 @@
       "type": "circle",
       "line": 0.4,
       "dia": 6,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Aerial connector",
@@ -189,7 +189,7 @@
       "type": "circle",
       "line": 0.3,
       "dia": 9,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Counter output",
@@ -208,7 +208,7 @@
       "type": "circle",
       "line": 0.3,
       "dia": 9,
-      "drillpoint": true
+      "drillmark": true
     }
   ]
 }

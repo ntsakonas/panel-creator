@@ -14,7 +14,7 @@ public class CircleItemRenderer implements ItemRenderer {
     public void renderInto(OutputRenderer.Operations operations) {
         System.out.println("Rendering Circle " + (circle.itemName != null ? circle.itemName : ""));
         operations.drawCircle(circle.xPosition, circle.yPosition, circle.diameter, circle.lineWidth);
-        if (circle.showDrillPoint) {
+        if (circle.showDrillMark) {
             // draw vertical line in the circle
             operations.drawLine(circle.xPosition, circle.yPosition + circle.diameter / 2.0f,
                     circle.xPosition, circle.yPosition - circle.diameter / 2.0f, 0.2f);

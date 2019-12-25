@@ -13,7 +13,7 @@
       "type": "circle",
       "line": 0.2,
       "dia": 20,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Power switch",
@@ -22,7 +22,7 @@
       "type": "circle",
       "line": 0.2,
       "dia": 6,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Compressor switch",
@@ -31,7 +31,7 @@
       "type": "circle",
       "line": 0.2,
       "dia": 6,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Bass Pot",
@@ -40,7 +40,7 @@
       "type": "circle",
       "line": 0.2,
       "dia": 6,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Treble pot",
@@ -49,7 +49,7 @@
       "type": "circle",
       "line": 0.2,
       "dia": 6,
-      "drillpoint": true
+      "drillmark": true
     },
     {
       "name": "Mic Label",
