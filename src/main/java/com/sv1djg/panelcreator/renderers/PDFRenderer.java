@@ -10,10 +10,14 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.util.Matrix;
 
 import java.io.IOException;
+import java.util.List;
 
 class PDFRenderer implements FileRenderer {
+
     final int DEFAULT_USER_SPACE_UNIT_DPI = 72;
     final float MM_TO_UNITS = 1 / (10 * 2.54f) * DEFAULT_USER_SPACE_UNIT_DPI;
+    //TODO:: this works against cropping, now I need to see how to do it properly
+    final float SAFETY_MARGIN = 25;
 
     private PDDocument document;
     private PDPageContentStream contentStream;
@@ -74,52 +78,55 @@ class PDFRenderer implements FileRenderer {
                 }
             }
 
+
             @Override
-            public void drawCircle(float centerX, float centerY, float radius, float width) {
+            public void drawCircle(float centerX, float centerY, float diameter, float width) {
                 try {
-                    // approximate circle using bezier curves
-                    // http://spencermortensen.com/articles/bezier-circle/
-                    // using the final solution
-                    // P_0 = (0,1), P_1 = (c,1), P_2 = (1,c), P_3 = (1,0)
-                    // P_0 = (1,0), P_1 = (1,-c), P_2 = (c,-1), P_3 = (0,-1)
-                    // P_0 = (0,-1), P_1 = (-c,-1), P_3 = (-1,-c), P_4 = (-1,0)
-                    // P_0 = (-1,0), P_1 = (-1,c), P_2 = (-c,1), P_3 = (0,1)
-                    // with c = 0.551915024494
-                    final float k = 0.551915024494f;
-                    final float arcPoint = k * radius;
-                    contentStream.setLineWidth(toPDFUnits(width));
-                    contentStream.moveTo(toPDFUnits(centerX), toPDFUnits(centerY + radius));
-                    contentStream.curveTo(toPDFUnits(centerX + arcPoint), toPDFUnits(centerY + radius),
-                            toPDFUnits(centerX + radius), toPDFUnits(centerY + arcPoint),
-                            toPDFUnits(centerX + radius), toPDFUnits(centerY));
-                    contentStream.curveTo(toPDFUnits(centerX + radius), toPDFUnits(centerY - arcPoint),
-                            toPDFUnits(centerX + arcPoint), toPDFUnits(centerY - radius),
-                            toPDFUnits(centerX), toPDFUnits(centerY - radius));
-                    contentStream.curveTo(toPDFUnits(centerX - arcPoint), toPDFUnits(centerY - radius),
-                            toPDFUnits(centerX - radius), toPDFUnits(centerY - arcPoint),
-                            toPDFUnits(centerX - radius), toPDFUnits(centerY));
-                    contentStream.curveTo(toPDFUnits(centerX - radius), toPDFUnits(centerY + arcPoint),
-                            toPDFUnits(centerX - arcPoint), toPDFUnits(centerY + radius),
-                            toPDFUnits(centerX), toPDFUnits(centerY + radius));
-                    contentStream.stroke();
+                    List<BezierPaths.BezierControlPoints> controlPoints = BezierPaths.createCircle(centerX, centerY, diameter / 2.0f);
+                    drawBezierPath(controlPoints, width);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
 
+            @Override
+            public void drawArc(float centerX, float centerY, float radius, float startAngle, float endAngle, float width) {
+                try {
+                    List<BezierPaths.BezierControlPoints> controlPoints = BezierPaths.createArc(centerX, centerY, radius, startAngle, endAngle);
+                    drawBezierPath(controlPoints, width);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            private void drawBezierPath(List<BezierPaths.BezierControlPoints> controlPoints, float width) throws IOException {
+                contentStream.setLineWidth(toPDFUnits(width));
+                for (BezierPaths.BezierControlPoints controlPoint : controlPoints) {
+                    drawBezierCurve(controlPoint);
+                }
+                contentStream.stroke();
+            }
+
+            private void drawBezierCurve(BezierPaths.BezierControlPoints controlPoint) throws IOException {
+                //NOTE:: this method is not doing the stroke, the caller has to do it
+                contentStream.moveTo(toPDFUnits(controlPoint.x1), toPDFUnits(controlPoint.y1));
+                contentStream.curveTo(toPDFUnits(controlPoint.x2), toPDFUnits(controlPoint.y2),
+                        toPDFUnits(controlPoint.x3), toPDFUnits(controlPoint.y3),
+                        toPDFUnits(controlPoint.x4), toPDFUnits(controlPoint.y4));
             }
 
             @Override
             public void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth) {
                 try {
-                    // maybe in the future I will support colour
+                    // // maybe in the future I will support colour
                     //contentStream.setNonStrokingColor(Color.RED);
                     contentStream.addRect(toPDFUnits(bottomLeftX), toPDFUnits(bottomLeftY), toPDFUnits(width), toPDFUnits(height));
                     contentStream.fill();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }
+
         };
     }
 
@@ -155,7 +162,7 @@ class PDFRenderer implements FileRenderer {
         PDRectangle pageSize = page.getMediaBox();
         float pageWidth = pageSize.getWidth();
         page.setRotation(90);
-        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth, 0));
+        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth - SAFETY_MARGIN, SAFETY_MARGIN));
     }
 
     private PDRectangle getPdfPageSize(PageSize pageSize) {

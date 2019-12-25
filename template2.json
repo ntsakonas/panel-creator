@@ -18,6 +18,35 @@
       "bold": true
     },
     {
+      "name": "VolumeDial",
+      "x": 50,
+      "y": 30,
+      "type": "dial",
+      "dia": 35,
+      "extend": 240,
+      "anchor": 180,
+      "baseline": true,
+      "line": 0.4,
+      "scale": {
+        "min": 0,
+        "max": 10,
+        "ticks": [
+          {
+            "values": true,
+            "length": 3,
+            "width": 1,
+            "resolution": 1,
+            "step": 2
+          },
+          {
+            "length": 1.5,
+            "width": 0.5,
+            "step": 0.2
+          }
+        ]
+      }
+    },
+    {
       "name": "BassLabel",
       "x": 100,
       "y": 50,

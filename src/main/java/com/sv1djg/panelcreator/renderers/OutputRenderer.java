@@ -13,6 +13,8 @@ public class OutputRenderer {
 
         void drawCircle(float centerX, float centerY, float radius, float width);
 
+        void drawArc(float centerX, float centerY, float radius, float startAngle, float endAngle, float width);
+
         void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth);
 
     }
@@ -43,7 +45,12 @@ public class OutputRenderer {
     }
 
     private PageOrientation fitsInPage(float width, float height, PageSize pageSize) {
-        // try in portrait 
+        // TODO:: this works against cropping, now I need to see how to do it properly
+        // the rednerer has safery margin 25 units -> 8mm
+        // I need to make the renderer return safety margin in mm
+        final float SAFETY_MARGIN = 8;
+        width += (2 * SAFETY_MARGIN);
+        height += (2 * SAFETY_MARGIN);
         if (width <= pageSize.widthMM && height <= pageSize.heightMM)
             return PageOrientation.PORTRAIT;
         // ..and then in landscape

@@ -13,10 +13,11 @@ public class DialItem extends PanelItem {
     public float anchorAngle;
     @JsonProperty("baseline")
     public boolean showBaseLine;
-    @JsonProperty("holedia")
-    public float holeDiameter;
+    @JsonProperty("line")
+    public float lineWidth;
     @JsonProperty("scale")
     public DialScale dialScale;
+
 
     @Override
     public String toString() {
@@ -25,7 +26,6 @@ public class DialItem extends PanelItem {
                 ", extendAngle=" + extendAngle +
                 ", anchorAngle=" + anchorAngle +
                 ", showBaseLine=" + showBaseLine +
-                ", holeDiameter=" + holeDiameter +
                 ", dialScale=" + dialScale +
                 ", itemName='" + itemName + '\'' +
                 ", xPosition=" + xPosition +
