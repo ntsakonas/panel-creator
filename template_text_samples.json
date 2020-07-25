@@ -1,0 +1,130 @@
+{
+  "width": 250,
+  "height": 130,
+  "border": false,
+  "padding": 0,
+  "line": 0.2,
+  "units": "mm",
+  "items": [
+    {
+      "name": "Courier Label",
+      "x": 40,
+      "y": 10,
+      "type": "label",
+      "text": "This is text in Courier - font 1",
+      "size": 12,
+      "font": 1,
+      "bold": false
+    },
+    {
+      "name": "Courier Bold Label",
+      "x": 40,
+      "y": 20,
+      "type": "label",
+      "text": "This is text in Courier Bold- font 1 + bold",
+      "size": 12,
+      "font": 1,
+      "bold": true
+    },
+    {
+      "name": "Courier Oblique Label",
+      "x": 40,
+      "y": 30,
+      "type": "label",
+      "text": "This is text in Courier Oblique - font 2",
+      "size": 12,
+      "font": 2,
+      "bold": false
+    },
+    {
+      "name": "Courier Oblique  Bold Label",
+      "x": 40,
+      "y": 40,
+      "type": "label",
+      "text": "This is text in Courier Oblique Bold- font 2 + bold",
+      "size": 12,
+      "font": 2,
+      "bold": true
+    },
+    {
+      "name": "Times Label",
+      "x": 40,
+      "y": 50,
+      "type": "label",
+      "text": "This is text in Times Regular- font 3",
+      "size": 12,
+      "font": 3,
+      "bold": false
+    },
+    {
+      "name": "Times Bold Label",
+      "x": 40,
+      "y": 60,
+      "type": "label",
+      "text": "This is text in Times Bold- font 3 + bold",
+      "size": 12,
+      "font": 3,
+      "bold": true
+    },
+    {
+      "name": "Times Italic Label",
+      "x": 40,
+      "y": 70,
+      "type": "label",
+      "text": "This is text in Times Italic - font 4",
+      "size": 12,
+      "font": 4,
+      "bold": false
+    },
+    {
+      "name": "Times Italic Bold Label",
+      "x": 40,
+      "y": 80,
+      "type": "label",
+      "text": "This is text in Times Italic Bold- font 4 + bold",
+      "size": 12,
+      "font": 4,
+      "bold": true
+    },
+    {
+      "name": "Helvetica Regular Label",
+      "x": 40,
+      "y": 90,
+      "type": "label",
+      "text": "This is text in Helvetica Regular - font 5",
+      "size": 12,
+      "font": 5,
+      "bold": false
+    },
+    {
+      "name": "Helvetica Regular Bold Label",
+      "x": 40,
+      "y": 100,
+      "type": "label",
+      "text": "This is text in Helvetica Regular Bold- font 5 + bold",
+      "size": 12,
+      "font": 5,
+      "bold": true
+    },
+    {
+      "name": "Helvetica Italic Label",
+      "x": 40,
+      "y": 110,
+      "type": "label",
+      "text": "This is text in Helvetica Italic - font 6",
+      "size": 12,
+      "font": 6,
+      "bold": false
+    },
+    {
+      "name": "Helvetica Italic Bold Label",
+      "x": 40,
+      "y": 120,
+      "type": "label",
+      "text": "This is text in Helvetica Italic Bold- font 6 + bold",
+      "size": 12,
+      "font": 6,
+      "bold": true
+    }
+  ]
+}
