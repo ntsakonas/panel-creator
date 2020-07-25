@@ -8,8 +8,8 @@
   "items": [
     {
       "name": "Signal output connector",
-      "x": 27.5,
-      "y": 10,
+      "x": 10,
+      "y": 12,
       "type": "circle",
       "line": 0.2,
       "dia": 9,
@@ -17,86 +17,207 @@
     },
     {
       "name": "Signal output label",
-      "x": 27.5,
-      "y": 18,
+      "x": 10,
+      "y": 22,
       "type": "label",
       "text": "OUTPUT",
-      "size": 10,
+      "size": 8,
       "font": 5,
       "center": true,
-      "bold": true
+      "bold": false
     },
     {
       "name": "Main Level Control Coarse",
-      "x": 15,
-      "y": 55,
+      "x": 35,
+      "y": 12,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
+    },
+    {
+      "name": "Main Level Control Coarse label",
+      "x": 35,
+      "y": 22,
+      "type": "label",
+      "text": "Main.Coarse",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
     },
     {
       "name": "Main Level Control Fine",
-      "x": 40,
-      "y": 55,
+      "x": 59,
+      "y": 12,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
+    },
+    {
+      "name": "Main Level Control Fine label",
+      "x": 59,
+      "y": 22,
+      "type": "label",
+      "text": "Main.Fine",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
     },
     {
       "name": "Square Level Control",
-      "x": 15,
-      "y": 30,
+      "x": 83,
+      "y": 12,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
     },
     {
+      "name": "Square Level Control label",
+      "x": 83,
+      "y": 22,
+      "type": "label",
+      "text": "Sq.Level",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
       "name": "2-Tone Level Control",
-      "x": 40,
-      "y": 30,
+      "x": 107,
+      "y": 12,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
+    },
+    {
+      "name": "2-Tone Level Control label",
+      "x": 107,
+      "y": 22,
+      "type": "label",
+      "text": "2T.Level",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
+      "name": "Frequency dial",
+      "x": 131,
+      "y": 12,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Frequency dial label",
+      "x": 131,
+      "y": 22,
+      "type": "label",
+      "text": "Frequency",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
     },
     {
       "name": "Button 1",
       "x": 125,
-      "y": 12,
+      "y": 50,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
+    },
+    {
+      "name": "Button 1 label",
+      "x": 125,
+      "y": 40,
+      "type": "label",
+      "text": "STEP",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
     },
     {
       "name": "Button 2",
       "x": 110,
-      "y": 12,
+      "y": 50,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
     },
     {
-      "name": "Button 2",
+      "name": "Button 2 label",
+      "x": 110,
+      "y": 40,
+      "type": "label",
+      "text": "FUNC",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
+      "name": "Button 3",
       "x": 95,
-      "y": 12,
+      "y": 50,
       "type": "circle",
       "line": 0.2,
       "dia": 6,
       "drillmark": true
     },
     {
-      "name": "Frequency dial",
-      "x": 125,
-      "y": 42.5,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 6,
-      "drillmark": true
+      "name": "Button 3 label",
+      "x": 95,
+      "y": 40,
+      "type": "label",
+      "text": "MEM",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
+      "name": "Sinusoid indicator",
+      "x": 4,
+      "y": 55,
+      "type": "label",
+      "text": "Sin",
+      "size": 5,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
+      "name": "Triangle indicator",
+      "x": 4,
+      "y": 50,
+      "type": "label",
+      "text": "Tri",
+      "size": 5,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
+      "name": "Square indicator",
+      "x": 4,
+      "y": 45,
+      "type": "label",
+      "text": "Squ",
+      "size": 5,
+      "font": 5,
+      "center": true,
+      "bold": false
     }
   ]
 }
