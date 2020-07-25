@@ -259,6 +259,7 @@ Since ticks is a collection, it means that we can add a secondary scale to show 
     ]
 }
 ```
+
 Depending on the available space and detail that needs to be displayed we can of course more than 1 subdivisions, so the following is a valid description,
 
 ```
@@ -286,6 +287,43 @@ Depending on the available space and detail that needs to be displayed we can of
   }
 ]
 ```
+
+---
+**HINT**
+
+In case you need the scale to run in reverse (that is, the scale to increase counter-clock-wise) this can be achieved with the following trick:
+* reverse the _min_ , _max_ values 
+* use a negative _step_
+* if there is a subdivision scale, that _step_ must be made negative too
+
+the previous example can be changed like this
+
+```
+"scale": {
+    "min": 10,
+    "max": 0,
+    "ticks": [
+      {
+        "values": true,
+        "decimals": 1,
+        "size": 12,
+        "font": 1,
+        "bold": true,
+        "length": 3,
+        "width": 0.5,
+        "step": -1,         
+        "labeldia": 52
+      },
+      {
+        "length": 1.5,
+        "width": 0.5,
+        "step": -0.2  
+      }
+    ]
+}
+```
+
+---
 
 ###### Custom scales
 This is a bit more complex description that can accommodate cases where the scale is marked in any non-linear way. This way allows us to put the marker and the associated text at any given point around the dial specified by its angle as measured from the starting point. This is ideal for cases that we are able to measure and calibrate the scale manually so we can use those values to generate the description.
@@ -402,8 +440,246 @@ For simplicity the application supports a small set of fonts that can be referen
 see also [full sample of fonts]
 
 ### A few complete examples
+
+This is the description of a panel for a microphone compressor I made. 
+(description available in [this file](mic_proc_template.json)) and the rendered output can be found [here](mic_proc_panel.pdf)
 ```json
+{
+  "width": 100,
+  "height": 70,
+  "border": true,
+  "padding": 0,
+  "line": 0.2,
+  "units": "mm",
+  "items": [
+    {
+      "name": "Mic Connector",
+      "x": 50,
+      "y": 20,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 20,
+      "drillmark": true
+    },
+    {
+      "name": "Power switch",
+      "x": 20,
+      "y": 20,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Compressor switch",
+      "x": 80,
+      "y": 20,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Bass Pot",
+      "x": 20,
+      "y": 45,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Treble pot",
+      "x": 80,
+      "y": 45,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Mic Label",
+      "x": 50,
+      "y": 5,
+      "type": "label",
+      "text": "MIC",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Power Switch Label",
+      "x": 20,
+      "y": 5,
+      "type": "label",
+      "text": "PWR",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Power Label OFF",
+      "x": 20,
+      "y": 10,
+      "type": "label",
+      "text": "OFF",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Power Label ON",
+      "x": 20,
+      "y": 27,
+      "type": "label",
+      "text": "ON",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Compressor Switch Label",
+      "x": 80,
+      "y": 5,
+      "type": "label",
+      "text": "COMP",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Compressor Label OFF",
+      "x": 80,
+      "y": 10,
+      "type": "label",
+      "text": "OFF",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Compressor Label ON",
+      "x": 80,
+      "y": 27,
+      "type": "label",
+      "text": "ON",
+      "size": 12,
+      "font": 1,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "BassDial",
+      "x": 20,
+      "y": 45,
+      "type": "dial",
+      "dia": 20,
+      "extend": 240,
+      "anchor": 180,
+      "baseline": true,
+      "line": 0.4,
+      "scale": {
+        "min": 0,
+        "max": 10,
+        "ticks": [
+          {
+            "values": true,
+            "decimals": 1,
+            "size": 12,
+            "font": 1,
+            "bold": true,
+            "length": 3,
+            "width": 0.5,
+            "step": 1,
+            "labeldia": 33
+          },
+          {
+            "length": 1.5,
+            "width": 0.5,
+            "step": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrebleDial",
+      "x": 80,
+      "y": 45,
+      "type": "dial",
+      "dia": 20,
+      "extend": 240,
+      "anchor": 180,
+      "baseline": true,
+      "line": 0.4,
+      "scale": {
+        "min": 0,
+        "max": 10,
+        "ticks": [
+          {
+            "values": true,
+            "decimals": 1,
+            "size": 12,
+            "font": 1,
+            "bold": true,
+            "length": 3,
+            "width": 0.5,
+            "step": 1,
+            "labeldia": 33
+          },
+          {
+            "length": 1.5,
+            "width": 0.5,
+            "step": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "name": "BassLabel",
+      "x": 20,
+      "y": 35,
+      "type": "label",
+      "text": "Bass",
+      "size": 12,
+      "font": 1,
+      "bold": true,
+      "center": true
+    },
+    {
+      "name": "TrebleLabel",
+      "x": 80,
+      "y": 35,
+      "type": "label",
+      "text": "Treble",
+      "size": 12,
+      "font": 1,
+      "bold": true,
+      "center": true
+    },
+    {
+      "name": "DeviceLabel",
+      "x": 50,
+      "y": 65,
+      "type": "label",
+      "text": "Mic Processor",
+      "size": 10,
+      "font": 1,
+      "bold": true,
+      "center": true
+    }
+  ]
+}
 ```
+
+
+See also the description of a [silly example](silly_example.json) where it started as a Regen receiver but abandoned. 
+The controls do not make a lot of sense but demonstrate the non-linear dial.The rendered output can be found [here](regen_receiver.pdf)
 
 
 [A quick introduction to JSON]: <https://www.digitalocean.com/community/tutorials/an-introduction-to-json>
