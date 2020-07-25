@@ -149,7 +149,6 @@ class PDFRenderer implements FileRenderer {
         document = new PDDocument();
         PDPage page = new PDPage(getPdfPageSize(pageSize));
         document.addPage(page);
-        // Start a new content stream which will "hold" the to be created content
         contentStream = new PDPageContentStream(document, page);
         if (pageOrientation == PageOrientation.LANDSCAPE)
             setPageToLandscape(page);

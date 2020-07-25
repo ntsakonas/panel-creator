@@ -9,9 +9,9 @@ public class TemplateReader {
 
     public PanelTemplate readTemplate(File templateFile) {
         try {
-            ObjectMapper mapper = new ObjectMapper(); // create once, reuse
+            ObjectMapper mapper = new ObjectMapper();
             Panel panel = mapper.readValue(templateFile, Panel.class);
-            System.out.println("Deserialised->" + panel);
+            // System.out.println("Deserialised->" + panel);
             return new PanelTemplate(panel);
         } catch (Throwable e) {
             e.printStackTrace();

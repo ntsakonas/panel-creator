@@ -128,7 +128,8 @@ public class DialRenderer implements ItemRenderer {
                 tickMarks.add(new SimpleImmutableEntry<>(tickAngle, tickText));
             }
 
-            return new ScaleTicksDescriptor(tickMarks, scaleTicks.tickLength, scaleTicks.tickWidth, scaleTicks.font, scaleTicks.textSize, scaleTicks.boldText, scaleTicks.labelRingDiameter / 2.0f);
+            return new ScaleTicksDescriptor(tickMarks, scaleTicks.tickLength, scaleTicks.tickWidth, scaleTicks.font,
+                    scaleTicks.textSize, scaleTicks.boldText, scaleTicks.labelRingDiameter / 2.0f);
         } else {
             // divide the scale range into equal arc distances and prepare the text to go with each
             // tick (if required)
@@ -140,7 +141,6 @@ public class DialRenderer implements ItemRenderer {
             tickLabelFormatter.setMaximumFractionDigits(scaleTicks.tickValueDecimals);
             List<SimpleImmutableEntry<Float, String>> tickMarks = new ArrayList<>();
 
-            // after drawing is done, check if this should be <=
             for (int tickNumber = 0; tickNumber <= numberOfTicks; tickNumber++) {
                 float tickAngle = endAngle - tickIncrementAngle * tickNumber;
                 String tickText = scaleTicks.showValues ?
@@ -149,7 +149,8 @@ public class DialRenderer implements ItemRenderer {
                 tickMarks.add(new SimpleImmutableEntry<>(tickAngle, tickText));
             }
 
-            return new ScaleTicksDescriptor(tickMarks, scaleTicks.tickLength, scaleTicks.tickWidth, scaleTicks.font, scaleTicks.textSize, scaleTicks.boldText, scaleTicks.labelRingDiameter / 2.0f);
+            return new ScaleTicksDescriptor(tickMarks, scaleTicks.tickLength, scaleTicks.tickWidth, scaleTicks.font,
+                    scaleTicks.textSize, scaleTicks.boldText, scaleTicks.labelRingDiameter / 2.0f);
         }
     }
 
