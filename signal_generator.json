@@ -214,6 +214,17 @@
       "drillmark": true
     },
     {
+      "name": "Switch 1 label",
+      "x": 22.5,
+      "y": 37.5,
+      "type": "label",
+      "text": "1 Tone 2",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
       "name": "switch-2-left-mount",
       "x": 39.5,
       "y": 33,
@@ -239,6 +250,17 @@
       "line": 0.2,
       "dia": 2,
       "drillmark": true
+    },
+    {
+      "name": "Switch 2 label",
+      "x": 49.5,
+      "y": 37.5,
+      "type": "label",
+      "text": "Tn Out Fn",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
     },
     {
       "name": "switch-3-left-mount",
@@ -268,6 +290,17 @@
       "drillmark": true
     },
     {
+      "name": "Switch 3 label",
+      "x": 76.5,
+      "y": 37.5,
+      "type": "label",
+      "text": "F Func P",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
       "name": "switch-4-left-mount",
       "x": 93.5,
       "y": 33,
@@ -295,6 +328,55 @@
       "drillmark": true
     },
     {
+      "name": "Switch 4 label",
+      "x": 103.5,
+      "y": 37.5,
+      "type": "label",
+      "text": "Ac Sq Dc",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
+      "name": "switch-5-left-mount",
+      "x": 120.5,
+      "y": 33,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 2,
+      "drillmark": true
+    },
+    {
+      "name": "switch-5-body-hole",
+      "x": 125.5,
+      "y": 30.5,
+      "type": "rectangle",
+      "line": 0.2,
+      "width": 10,
+      "height": 5
+    },
+    {
+      "name": "switch-5-right-mount",
+      "x": 140.5,
+      "y": 33,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 2,
+      "drillmark": true
+    },
+    {
+      "name": "Switch 5 label",
+      "x": 130.5,
+      "y": 37.5,
+      "type": "label",
+      "text": "on PWR off",
+      "size": 8,
+      "font": 5,
+      "center": true,
+      "bold": false
+    },
+    {
       "name": "frequency-display",
       "x": 14,
       "y": 42.5,
@@ -304,12 +386,34 @@
       "height": 15
     },
     {
+      "name": "Mem Indicator label",
+      "x": 14,
+      "y": 60,
+      "type": "label",
+      "text": "Fun Mem",
+      "size": 8,
+      "font": 6,
+      "center": false,
+      "bold": false
+    },
+    {
+      "name": "Frequency Indicator label",
+      "x": 50,
+      "y": 60,
+      "type": "label",
+      "text": "Frequency",
+      "size": 8,
+      "font": 6,
+      "center": false,
+      "bold": false
+    },
+    {
       "name": "Sinusoid indicator",
       "x": 5,
       "y": 55,
       "type": "label",
       "text": "SIN",
-      "size": 5,
+      "size": 7,
       "font": 5,
       "center": false,
       "bold": true
@@ -320,7 +424,7 @@
       "y": 50,
       "type": "label",
       "text": "TRI",
-      "size": 5,
+      "size": 7,
       "font": 5,
       "center": false,
       "bold": true
@@ -331,10 +435,22 @@
       "y": 45,
       "type": "label",
       "text": "SQR",
-      "size": 5,
+      "size": 7,
       "font": 5,
       "center": false,
       "bold": true
+    },
+    {
+      "name": "Brand label",
+      "x": 90,
+      "y": 60,
+      "type": "label",
+      "text": "100Khz Function/2-Tone Generator",
+      "size": 8,
+      "font": 6,
+      "center": false,
+      "bold": true
     }
+
   ]
 }
