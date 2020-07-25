@@ -105,7 +105,7 @@ the label supports the following properties:
 * _y_ - this represents the Y coordinate of the start point of the text.
 * _text_ - the text content of the label (this is what is displayed)
 * _size_ - this is the font size (in points) that is used for the text
-* _font_ - this is the index of the [internal font] to use for the text
+* _font_ - this is the index of the [internal fonts](#internal-fonts) to use for the text
 * _bold_ - set this to _true_ to make the text **bold** or _false_ to use the regualr font (this is the default is not specified).
 * _center_ - if set to _true_ the text of the label is center aligned on (x,y) 
 
@@ -330,7 +330,7 @@ in this case,  the ticks support the following properties:
 
 As with min-max scale, non-liner scale can become arbitrary comples depending on sapce and needs. In the example below, a secondary scale is added to show subsdivisions, extending the previous example,
 
-```json
+```
 "scale": {
     "ticks": [
       {
@@ -387,7 +387,7 @@ As with min-max scale, non-liner scale can become arbitrary comples depending on
 },
 ```
 
-#### Internal fonts
+#### [Internal fonts]
 For simplicity the application supports a small set of fonts that can be referenced in the _font_ attribute by index.It is not possible to reference and use a font that is installed on your computer.
 
 | Font index | Regular Font | Bold font |
