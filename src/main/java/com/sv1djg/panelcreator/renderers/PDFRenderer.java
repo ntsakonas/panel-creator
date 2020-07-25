@@ -119,7 +119,7 @@ class PDFRenderer implements FileRenderer {
             public void drawRectangle(float bottomLeftX, float bottomLeftY, float width, float height, float lineWidth) {
                 try {
                     // // maybe in the future I will support colour
-                    //contentStream.setNonStrokingColor(Color.RED);
+                    // contentStream.setNonStrokingColor(Color.RED);
                     contentStream.addRect(toPDFUnits(bottomLeftX), toPDFUnits(bottomLeftY), toPDFUnits(width), toPDFUnits(height));
                     contentStream.fill();
                 } catch (IOException e) {
@@ -167,7 +167,7 @@ class PDFRenderer implements FileRenderer {
         PDRectangle pageSize = page.getMediaBox();
         float pageWidth = pageSize.getWidth();
         page.setRotation(90);
-        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth,0));
+        contentStream.transform(new Matrix(0, 1, -1, 0, pageWidth, 0));
     }
 
     private PDRectangle getPdfPageSize(PageSize pageSize) {

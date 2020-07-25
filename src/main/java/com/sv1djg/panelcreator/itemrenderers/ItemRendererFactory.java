@@ -21,6 +21,9 @@ public class ItemRendererFactory {
         if (item.getClass() == LineItem.class)
             return new LineRenderer(LineItem.class.cast(item));
 
+        if (item.getClass() == RectangleItem.class)
+            return new RectangleRenderer(RectangleItem.class.cast(item));
+
         throw new IllegalArgumentException("Unknown type " + item.getClass().getName());
     }
 }
