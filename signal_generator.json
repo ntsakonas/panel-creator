@@ -1,0 +1,102 @@
+{
+  "width": 145,
+  "height": 65,
+  "border": true,
+  "padding": 0,
+  "line": 0.2,
+  "units": "mm",
+  "items": [
+    {
+      "name": "Signal output connector",
+      "x": 27.5,
+      "y": 10,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 9,
+      "drillmark": true
+    },
+    {
+      "name": "Signal output label",
+      "x": 27.5,
+      "y": 18,
+      "type": "label",
+      "text": "OUTPUT",
+      "size": 10,
+      "font": 5,
+      "center": true,
+      "bold": true
+    },
+    {
+      "name": "Main Level Control Coarse",
+      "x": 15,
+      "y": 55,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Main Level Control Fine",
+      "x": 40,
+      "y": 55,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Square Level Control",
+      "x": 15,
+      "y": 30,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "2-Tone Level Control",
+      "x": 40,
+      "y": 30,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Button 1",
+      "x": 125,
+      "y": 12,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Button 2",
+      "x": 110,
+      "y": 12,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Button 2",
+      "x": 95,
+      "y": 12,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    },
+    {
+      "name": "Frequency dial",
+      "x": 125,
+      "y": 42.5,
+      "type": "circle",
+      "line": 0.2,
+      "dia": 6,
+      "drillmark": true
+    }
+  ]
+}
