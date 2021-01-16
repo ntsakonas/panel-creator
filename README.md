@@ -1,8 +1,8 @@
 # Panel creator
-A small utility to generate front panels for your DIY (which can also be used as drilling templates). It is targetting small-medium panel sizes as the panel must fit in an A4 paper.
+A utility to generate front panels for your DIY projects (which can also be used as drilling templates). It can create small-medium panel sizes as the panel must fit in an A4 paper.
 
 ## How to run it
-Download the pre-build `jar` from the releases, make sure you have Java 1.8 or later installed and run it on a terminal like this:
+Download the pre-built `jar` from the releases, make sure you have Java 1.8 or later installed and run it on a terminal like this:
 ```
 $ java -jar panel-creator-1.0.jar TEMPLATE_FILE.JSON
 ```
