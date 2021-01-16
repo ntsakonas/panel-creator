@@ -132,6 +132,30 @@ the circle supports the following properties:
 * _line_ - despite its name, this represents the width of the line used on the circle outline.
 
 
+##### Rectangle
+This is a rectangular hole of specified dimensions (like the ones used for displays or siding switches). 
+
+here is an example, 
+```
+{
+  "name": "sliding-switch-1",
+  "x": 13.5,
+  "y": 30.5,
+  "type": "rectangle",
+  "line": 0.2,
+  "width": 10,
+  "height": 5
+}
+```
+the rectangle supports the following properties:
+* _type_ - this property must have the value of "rectangle"
+* _x_ - this represents the X coordinate of the bottom left corner of the rectangle.
+* _y_ - this represents the Y coordinate of the bottom left corner of the rectangle.
+* _line_ - despite its name, this represents the width of the line used on the circle outline.
+* _width_ - the width of the rectangle in the specific units.
+* _height_ - the height of the rectangle in the specific units.
+
+
 ##### Dial
 This is one of the most complex controls as it generates a place for a round control (e.g potentiometer) along with its dial and scale. The scale is very customisable which makes the control a bit lengthy to describe, but the result definitely worths the time spent! **NOTE:** A dial control does not include the hole for the shaft, it is just the dial around it. A separate whole is required in the panel description file. 
 
@@ -440,247 +464,16 @@ For simplicity the application supports a small set of fonts that can be referen
 see also [full sample of fonts]
 
 ### A few complete examples
+Have a look at the examples...
 
 This is the description of a panel for a microphone compressor I made. 
-(description available in [this file](mic_proc_template.json)) and the rendered output can be found [here](mic_proc_panel.pdf)
-```json
-{
-  "width": 100,
-  "height": 70,
-  "border": true,
-  "padding": 0,
-  "line": 0.2,
-  "units": "mm",
-  "items": [
-    {
-      "name": "Mic Connector",
-      "x": 50,
-      "y": 20,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 20,
-      "drillmark": true
-    },
-    {
-      "name": "Power switch",
-      "x": 20,
-      "y": 20,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 6,
-      "drillmark": true
-    },
-    {
-      "name": "Compressor switch",
-      "x": 80,
-      "y": 20,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 6,
-      "drillmark": true
-    },
-    {
-      "name": "Bass Pot",
-      "x": 20,
-      "y": 45,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 6,
-      "drillmark": true
-    },
-    {
-      "name": "Treble pot",
-      "x": 80,
-      "y": 45,
-      "type": "circle",
-      "line": 0.2,
-      "dia": 6,
-      "drillmark": true
-    },
-    {
-      "name": "Mic Label",
-      "x": 50,
-      "y": 5,
-      "type": "label",
-      "text": "MIC",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "Power Switch Label",
-      "x": 20,
-      "y": 5,
-      "type": "label",
-      "text": "PWR",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "Power Label OFF",
-      "x": 20,
-      "y": 10,
-      "type": "label",
-      "text": "OFF",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "Power Label ON",
-      "x": 20,
-      "y": 27,
-      "type": "label",
-      "text": "ON",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "Compressor Switch Label",
-      "x": 80,
-      "y": 5,
-      "type": "label",
-      "text": "COMP",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "Compressor Label OFF",
-      "x": 80,
-      "y": 10,
-      "type": "label",
-      "text": "OFF",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "Compressor Label ON",
-      "x": 80,
-      "y": 27,
-      "type": "label",
-      "text": "ON",
-      "size": 12,
-      "font": 1,
-      "center": true,
-      "bold": true
-    },
-    {
-      "name": "BassDial",
-      "x": 20,
-      "y": 45,
-      "type": "dial",
-      "dia": 20,
-      "extend": 240,
-      "anchor": 180,
-      "baseline": true,
-      "line": 0.4,
-      "scale": {
-        "min": 0,
-        "max": 10,
-        "ticks": [
-          {
-            "values": true,
-            "decimals": 1,
-            "size": 12,
-            "font": 1,
-            "bold": true,
-            "length": 3,
-            "width": 0.5,
-            "step": 1,
-            "labeldia": 33
-          },
-          {
-            "length": 1.5,
-            "width": 0.5,
-            "step": 0.2
-          }
-        ]
-      }
-    },
-    {
-      "name": "TrebleDial",
-      "x": 80,
-      "y": 45,
-      "type": "dial",
-      "dia": 20,
-      "extend": 240,
-      "anchor": 180,
-      "baseline": true,
-      "line": 0.4,
-      "scale": {
-        "min": 0,
-        "max": 10,
-        "ticks": [
-          {
-            "values": true,
-            "decimals": 1,
-            "size": 12,
-            "font": 1,
-            "bold": true,
-            "length": 3,
-            "width": 0.5,
-            "step": 1,
-            "labeldia": 33
-          },
-          {
-            "length": 1.5,
-            "width": 0.5,
-            "step": 0.2
-          }
-        ]
-      }
-    },
-    {
-      "name": "BassLabel",
-      "x": 20,
-      "y": 35,
-      "type": "label",
-      "text": "Bass",
-      "size": 12,
-      "font": 1,
-      "bold": true,
-      "center": true
-    },
-    {
-      "name": "TrebleLabel",
-      "x": 80,
-      "y": 35,
-      "type": "label",
-      "text": "Treble",
-      "size": 12,
-      "font": 1,
-      "bold": true,
-      "center": true
-    },
-    {
-      "name": "DeviceLabel",
-      "x": 50,
-      "y": 65,
-      "type": "label",
-      "text": "Mic Processor",
-      "size": 10,
-      "font": 1,
-      "bold": true,
-      "center": true
-    }
-  ]
-}
-```
+The description is available in [this file](samples/mic_proc_panel.json) and the rendered output can be found [here](samples/mic_proc_panel.pdf)
 
+This is the description of a [Regen receiver](samples/regen_receiver.json) which was abandoned. 
+The controls do not make a lot of sense but demonstrate the non-linear dial.The rendered output can be found [here](samples/regen_receiver.pdf)
 
-See also the description of a [silly example](silly_example.json) where it started as a Regen receiver but abandoned. 
-The controls do not make a lot of sense but demonstrate the non-linear dial.The rendered output can be found [here](regen_receiver.pdf)
-
+Another more complex example of a ginal generator
+The description is available in [this file](samples/signal_generator.json) and the rendered output can be found [here](samples/signal_generator.json)
 
 [A quick introduction to JSON]: <https://www.digitalocean.com/community/tutorials/an-introduction-to-json>
 
