@@ -132,6 +132,30 @@ the circle supports the following properties:
 * _line_ - despite its name, this represents the width of the line used on the circle outline.
 
 
+##### Rectangle
+This is a rectangular hole of specified dimensions (like the ones used for displays or siding switches). 
+
+here is an example, 
+```
+{
+  "name": "sliding-switch-1",
+  "x": 13.5,
+  "y": 30.5,
+  "type": "rectangle",
+  "line": 0.2,
+  "width": 10,
+  "height": 5
+}
+```
+the rectangle supports the following properties:
+* _type_ - this property must have the value of "rectangle"
+* _x_ - this represents the X coordinate of the bottom left corner of the rectangle.
+* _y_ - this represents the Y coordinate of the bottom left corner of the rectangle.
+* _line_ - despite its name, this represents the width of the line used on the circle outline.
+* _width_ - the width of the rectangle in the specific units.
+* _height_ - the height of the rectangle in the specific units.
+
+
 ##### Dial
 This is one of the most complex controls as it generates a place for a round control (e.g potentiometer) along with its dial and scale. The scale is very customisable which makes the control a bit lengthy to describe, but the result definitely worths the time spent! **NOTE:** A dial control does not include the hole for the shaft, it is just the dial around it. A separate whole is required in the panel description file. 
 
