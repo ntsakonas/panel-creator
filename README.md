@@ -27,7 +27,7 @@ Create a text file and give it any name you like. Filename or extension makes no
 The application supports the following controls:
 * Line - creates a straight line of a specified length.
 * Label - creates a simple label that contains text in a single line.
-* Rectangle - creates a rectangular box of specified width and height (todo).
+* Rectangle - creates a rectangular box of specified width and height.
 * Circle - creates a simple circle of the appropriate diameter.
 * Dial - creates a dial for a round potentiometer with scale, numbers and ticks.
 
