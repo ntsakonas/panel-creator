@@ -470,7 +470,7 @@ For simplicity the application supports a small set of fonts that can be referen
 | 5 | Helvetica Regular | Helvetica Regular Bold
 | 6 | Helvetica Oblique | Helvetica Oblique Bold
 
-see also [full sample of fonts]
+see also [full sample of fonts](samples/font_samples.pdf)
 
 ### A few complete examples
 Have a look at the examples...
@@ -482,11 +482,8 @@ This is the description of a [Regen receiver](samples/regen_receiver.json) which
 The controls do not make a lot of sense but demonstrate the non-linear dial.The rendered output can be found [here](samples/regen_receiver.pdf)
 
 Another more complex example of a ginal generator
-The description is available in [this file](samples/signal_generator.json) and the rendered output can be found [here](samples/signal_generator.json)
+The description is available in [this file](samples/signal_generator.json) and the rendered output can be found [here](samples/signal_generator.pdf)
 
 [A quick introduction to JSON]: <https://www.digitalocean.com/community/tutorials/an-introduction-to-json>
 
 [An Introduction to JSON - Syntax and structure]: <https://www.digitalocean.com/community/tutorials/an-introduction-to-json>
-
-[full sample of fonts]:
-<font_samples.pdf>
